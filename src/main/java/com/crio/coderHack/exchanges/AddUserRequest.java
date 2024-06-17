@@ -6,7 +6,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class RegisterUserRequest {
+public class AddUserRequest {
     @NotEmpty
     private String username;
 }

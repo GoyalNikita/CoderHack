@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.crio.coderHack.dto.User;
 import com.crio.coderHack.exceptions.UserNotFoundException;
-import com.crio.coderHack.exchanges.RegisterUserRequest;
+import com.crio.coderHack.exchanges.AddUserRequest;
 import com.crio.coderHack.services.IUserService;
 
 import jakarta.validation.ConstraintViolationException;
@@ -53,10 +53,10 @@ public class UserController {
         return ResponseEntity.ok().body(user);
     }
 
-    // Handles POST requests to register a new user.
+    // Handles POST requests to add a new user.
     @PostMapping(USER_API_ENDPOINT)
-    public ResponseEntity<User> registerUser(@Valid @RequestBody RegisterUserRequest registerUserRequest) {
-        String username = registerUserRequest.getUsername();
+    public ResponseEntity<User> registerUser(@Valid @RequestBody AddUserRequest addUserRequest) {
+        String username = addUserRequest.getUsername();
 
         User user = userService.addUser(username);
 
