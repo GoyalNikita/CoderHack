@@ -11,9 +11,7 @@ Nikita Goyal
 - [Validation and Error Handling](#validation-and-error-handling)
 - [Getting Started](#getting-started)
 - [Running the Tests](#running-the-tests)
-- [Publishing](#publishing)
-- [Author](#author)
-
+- [Postman Collection](#postman-collection)
 ## Requirements
 
 - The API must handle CRUD operations for user registrations.
